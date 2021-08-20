@@ -20,25 +20,30 @@
                 <div class="col-lg-6">
                     <h1 class="fs-1 fw-bolder">Customaize yout Blue 24inch iMac with Apple MI chip</h1>
                     <blog>
-                        <p class="fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam vitae error, harum aliquam vel quia modi! Vitae, repellat cumque impedit dignissimos amet, deserunt minus inventore recusandae ut eaque deleniti.
+                        <p class="fs-5 fw-light">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine
+                            8GB unified memory
+                            256GB SSD storage
+                            Two Thunderbolt / USB 4 ports
+                            Magic Mouse
+                            Magic Keyboard - US English
                         </p>
                     </blog>
                     <div class="row gy-5">
                         <div>
                             <h1 class="fs-4 fw-bold">Memory</h1>
-                            <button class="btn btn-dark">8GB unified memory</button>
-                            <button class="btn btn-dark">16GB unifeld memory</button>
+                            <button id="memoryBtnOne" class="btn btn-dark">8GB unified memory</button>
+                            <button id="memoryBtnTwo" class="btn btn-dark">16GB unifeld memory</button>
                         </div>
                         <div>
                             <h1 class="fs-4 fw-bold">Storage</h1>
-                            <button class="btn btn-dark">256GB SSD storage</button>
-                            <button class="btn btn-dark">512GB SSD storage</button>
-                            <button class="btn btn-dark">1TB SSD storage</button>
+                            <button id="storageBtnOne" class="btn btn-dark">256GB SSD storage</button>
+                            <button id="storageBtnTwo" class="btn btn-dark">512GB SSD storage</button>
+                            <button id="storageBtnThree" class="btn btn-dark">1TB SSD storage</button>
                         </div>
                         <div>
                             <h1 class="fs-4 fw-bold">Choose your delivery option</h1>
-                            <button class="btn btn-dark">Friday, Aug 25 FREE prime Delivery</button>
-                            <button class="btn btn-dark">Friday, Aug 21 Delivery Charge $20</button>
+                            <button id="deliveryBtnOne" class="btn btn-dark">Friday, Aug 25 FREE prime Delivery</button>
+                            <button id="deliveryBtnTwo" class="btn btn-dark">Friday, Aug 21 Delivery Charge $20</button>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -49,19 +54,19 @@
                             <h3 class="fs-5 fw-bold">Delivery Charge</h3>
                         </div>
                         <div class="col-lg-4">
-                            <h3 class="fs-5 fw-bold">$1299</h3>
-                            <h3 class="fs-5 fw-bold">$0</h3>
-                            <h3 class="fs-5 fw-bold">$0</h3>
-                            <h3 class="fs-5 fw-bold">$0</h3>
+                            <h3 class="fs-5 fw-bold">$<span id="bestPrice">1299</span></h3>
+                            <h3 class="fs-5 fw-bold">$<span id="memoryCost">0</span></h3>
+                            <h3 class="fs-5 fw-bold">$<span id="storageCost">0</span></h3>
+                            <h3 class="fs-5 fw-bold">$<span id="deliveryCost">0</span></h3>
                         </div>
 
                         <div>
-                            <hr class="col-lg-8">
+                            <hr class="col-lg-8 ">
                         </div>
                         
                         <div class="row">
                             <h3 class="fs-5 fw-bold col-lg-4">Total Price</h3>
-                            <h3 class="fs-5 fw-bold col-lg-4">$1299</h3>
+                            <h3 class="fs-5 fw-bold col-lg-4">$<span id="totalPrice">1299</span></h3>
 
                         </div>
 
@@ -83,7 +88,7 @@
     <main>
         <section>
             <div class="d-flex justify-content-center bg-light p-2">
-                <h1>Total: $1299</h1>
+                <h1>Total: $<span id="totalPriceTwo">1299</span></h1>
             </div>
         </section>
     </main>

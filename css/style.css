@@ -8,3 +8,13 @@ hr{
     padding: 2px;
     
 }
+/* style apply button  */
+#applyBtn{
+    background: rgb(238, 59, 95);
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    
+}

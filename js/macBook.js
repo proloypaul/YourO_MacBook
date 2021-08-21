@@ -57,29 +57,26 @@ function getTotalPrice(){
 };
 
 // get offer from stevekaku
-function getOffer(){
-    // const inputText = document.getElementById("inputText");
-    // console.log(inputText.value);
-    // const totalPriceTwo = document.getElementById("totalPriceTwo");
-    // console.log(totalPriceTwo.innerText);
-
-}
-// getOffer();
-
-document.getElementById("applyBtn").addEventListener("click", function(){
-    const inputText = document.getElementById("inputText");
-    // console.log(inputText.value);
-    const totalPriceTwo = document.getElementById("totalPriceTwo");
-    if(inputText.value == "stevekaku"){
-        // console.log("done")
-        const intTotalPriceTwo = parseInt(totalPriceTwo.innerText);
-        const parcentOfOffer =  ((20/100)*intTotalPriceTwo);
-        const offerFromSteveKaku = intTotalPriceTwo - parcentOfOffer;
-        // console.log(offerFromSteveKaku); 
-        totalPriceTwo.innerText = offerFromSteveKaku;
-        inputText.value = '';
-    };
+function getOffer(btnId){
+    document.getElementById(btnId).addEventListener("click", function(){
+        const inputText = document.getElementById("inputText");
+        // console.log(inputText.value);
+        const totalPriceTwo = document.getElementById("totalPriceTwo");
+        if(inputText.value == "stevekaku"){
+            // console.log("done")
+            const intTotalPriceTwo = parseInt(totalPriceTwo.innerText);
+            const parcentOfOffer =  ((20/100)*intTotalPriceTwo);
+            const offerFromSteveKaku = intTotalPriceTwo - parcentOfOffer;
+            // console.log(offerFromSteveKaku); 
+            totalPriceTwo.innerText = offerFromSteveKaku;
+            inputText.value = '';
+        };
+        
+    });
     
-});
+};
+getOffer("applyBtn");
+
+
     
 

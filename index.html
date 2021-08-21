@@ -13,10 +13,13 @@
 <body>
     <header>
         <section class="container mt-5">
+            <!-- create two coloumn under one row  -->
             <div class="row">
+                <!-- one coloumn only img  -->
                 <div class="col-lg-6 d-flex align-items-center">
                     <img src="images/mac.png">
                 </div>
+                <!-- other coloumn customaize mac book  -->
                 <div class="col-lg-6">
                     <h1 class="fs-1 fw-bolder">Customaize yout Blue 24inch iMac with Apple MI chip</h1>
                     <blog>
@@ -74,8 +77,8 @@
                     <div class="my-5">
                         <h4 class="fs-6 fw-bold">Add Pomo code</h4>
                         <div class="d-flex text-align-center">
-                            <input type="text">
-                            <button class="btn btn-dark ms-2">Apply</button>
+                            <input id="inputText" type="text">
+                            <button id="applyBtn" class="btn btn-dark ms-2">Apply</button>
                         </div>
                     </div>
                 </div>
@@ -86,6 +89,7 @@
 
 
     <main>
+        <!-- total price section  -->
         <section>
             <div class="d-flex justify-content-center bg-light p-2">
                 <h1>Total: $<span id="totalPriceTwo">1299</span></h1>
@@ -96,7 +100,7 @@
     
     <!-- bootstrap js link  -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- js macBook.js  link -->
+    <!-- javascript macBook.js  link -->
     <script src="js/macBook.js"></script>
 </body>
 </html>
